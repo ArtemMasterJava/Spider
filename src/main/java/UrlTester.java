@@ -1,3 +1,5 @@
+import org.jsoup.select.Elements;
+
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -16,6 +18,8 @@ public class UrlTester {
     public UrlTester(String url) throws MalformedURLException{
         this.url = new URL(url);
     }
+
+
 
     public void connect() throws IOException {
         http =(HttpURLConnection) url.openConnection();
